@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.halbasch</groupId>
+	<artifactId>sudoku-dlx</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>Sudoku Grid Search</name>
+	<description>Sudoku utility based on dancing links.</description>
+	<url>https://github.com/RocusHalbasch/sudoku-dlx</url>
+
+	<licenses>
+		<license>
+			<name>Unlicense</name>
+			<url>http://unlicense.org/</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Rocus Halbasch</name>
+			<email>rocus.halbasch@gmail.com</email>
+			<organization>Elusive</organization>
+			<organizationUrl>https://github.com/RocusHalbasch</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/RocusHalbasch/sudoku-dlx.git</connection>
+		<developerConnection>scm:git:ssh://github.com:RocusHalbasch/sudoku-dlx.git</developerConnection>
+		<url>https://github.com/RocusHalbasch/sudoku-dlx</url>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.halbasch</groupId>
+			<artifactId>dlx</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.1</version>
+				<configuration>
+					<excludes>
+						<exclude>**/sudoku/*</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
