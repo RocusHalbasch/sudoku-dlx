@@ -56,9 +56,10 @@
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>3.1.1</version>
 				<configuration>
-					<excludes>
-						<exclude>**/sudoku/*</exclude>
-					</excludes>
+					<includes>
+						<include>**/sudoku/dlx/*</include>
+						<include>**/sudoku/SudokuStringUtils.class</include>
+					</includes>
 				</configuration>
 			</plugin>
 		</plugins>
