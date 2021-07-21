@@ -1,9 +1,10 @@
 package org.halbasch.sudoku;
 
 import static org.halbasch.sudoku.SudokuSolving.attemptToSolve;
-import static org.halbasch.sudoku.dlx.Group.columns;
-import static org.halbasch.sudoku.dlx.Group.rows;
+import static org.halbasch.sudoku.dlx.Groups.columns;
+import static org.halbasch.sudoku.dlx.Groups.rows;
 
+import org.halbasch.sudoku.dlx.CustomGroup;
 import org.halbasch.sudoku.dlx.Group;
 import org.halbasch.sudoku.dlx.SudokuDLX;
 
@@ -14,7 +15,7 @@ import org.halbasch.sudoku.dlx.SudokuDLX;
  * @author rhalbasch
  */
 public class AndrewStuart1Solver {
-	public static final Group andrewStuart1 = new Group("Jigsaw",
+	public static final Group andrewStuart1 = new CustomGroup("Jigsaw",
 			new int[][] { { 0, 1, 2, 9, 10, 11, 18, 19, 27 }, { 3, 4, 5, 6, 12, 13, 14, 15, 23 }, { 7, 8, 16, 17, 24, 25, 26, 34, 35 },
 					{ 20, 21, 28, 29, 30, 36, 37, 38, 47 }, { 22, 31, 32, 39, 40, 41, 48, 49, 58 }, { 33, 42, 43, 44, 50, 51, 52, 59, 60 },
 					{ 45, 46, 54, 55, 56, 63, 64, 72, 73 }, { 57, 65, 66, 67, 68, 74, 75, 76, 77 },

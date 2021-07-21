@@ -2,12 +2,12 @@ package org.halbasch.sudoku;
 
 import static org.halbasch.sudoku.SudokuStringUtils.fromArray;
 import static org.halbasch.sudoku.SudokuStringUtils.toArray;
-import static org.halbasch.sudoku.dlx.Group.blocks;
-import static org.halbasch.sudoku.dlx.Group.columns;
-import static org.halbasch.sudoku.dlx.Group.crosses;
-import static org.halbasch.sudoku.dlx.Group.positions;
-import static org.halbasch.sudoku.dlx.Group.rows;
-import static org.halbasch.sudoku.dlx.Group.windows;
+import static org.halbasch.sudoku.dlx.Groups.blocks;
+import static org.halbasch.sudoku.dlx.Groups.columns;
+import static org.halbasch.sudoku.dlx.Groups.crosses;
+import static org.halbasch.sudoku.dlx.Groups.positions;
+import static org.halbasch.sudoku.dlx.Groups.rows;
+import static org.halbasch.sudoku.dlx.Groups.windows;
 import static org.halbasch.sudoku.dlx.SudokuDLX.AnswerStatus.SOLVED;
 import static org.halbasch.sudoku.dlx.SudokuDLX.ClueStatus.VALID;
 
